@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "vida-plena-app",
+    "slug": "vida-plena-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "O Vida Plena usa sua localização para mostrar ao contratante o trajeto até o endereço do atendimento."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "config": {
+        "googleMaps": {
+          "apiKey": "ADICIONAR_CHAVE_DO_GOOGLE_MAPS_AQUI"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-status-bar",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "O Vida Plena usa a câmera para tirar a foto do seu rosto na hora, para que famílias e profissionais saibam com quem estão lidando.",
+          "recordAudioAndroid": false
+        }
+      ]
+    ]
+  }
+}
